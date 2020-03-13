@@ -2,9 +2,10 @@ package model;
 
 public class Rect extends Figure {
 
-	public Rect(int size, float posX, float posY, float dir) {
-		super(size, posX, posY, dir);
+	public Rect(PApplet app,int size, float posX, float posY, float dir) {
+		super(app, size, posX, posY, dir);
 		// TODO Auto-generated constructor stub
+		this.app = app;
 		this.size = size;
 		this.posX = posX;
 		this.posY = posY;

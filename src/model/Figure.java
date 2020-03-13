@@ -1,13 +1,16 @@
 package model;
 
+import processing.core.PApplet;
+
 public abstract class Figure {
 
+	protected PApplet app;
 	protected int size;
 	protected float posX;
 	protected float posY;
 	protected float dir;
 
-	public Figure(int size, float posX, float posY, float dir) {
+	public Figure(PApplet app,int size, float posX, float posY, float dir) {
 		this.size = size;
 		this.posX = posX;
 		this.posY = posY;
@@ -72,6 +75,20 @@ public abstract class Figure {
 	 */
 	public void setDir(float dir) {
 		this.dir = dir;
+	}
+
+	/**
+	 * @return the app
+	 */
+	public PApplet getApp() {
+		return app;
+	}
+
+	/**
+	 * @param app the app to set
+	 */
+	public void setApp(PApplet app) {
+		this.app = app;
 	}
 	
 	

@@ -27,27 +27,28 @@ public class Logic {
 				dataCircle = txtload[i].split(" ");
 				for (int j = 0; j < dataCircle.length; j++) {
 					System.out.println(dataCircle[j]);
-					int size = Integer.parseInt(dataCircle[0]);
-					int posX = Integer.parseInt(dataCircle[1]);
-					int posY = Integer.parseInt(dataCircle[2]);
-					int dir = Integer.parseInt(dataCircle[3]);
+					System.out.println(dataCircle[0]);
+					int size = Integer.parseInt(dataCircle[1]);
+					int posX = Integer.parseInt(dataCircle[2]);
+					int posY = Integer.parseInt(dataCircle[3]);
+					int dir = Integer.parseInt(dataCircle[4]);
 					circle.add(new Circle(size, posX, posY, dir));
 				}
 				
 			}
-			if(txtload[i].contains("Cuadrado")) {
+			/*if(txtload[i].contains("Cuadrado")) {
 				
 				dataRect = txtload[i].split(" ");
 				for (int j = 0; j < dataRect.length; j++) {
 					System.out.println(dataRect[j]);
-					int size = Integer.parseInt(dataCircle[0]);
-					int posX = Integer.parseInt(dataCircle[1]);
-					int posY = Integer.parseInt(dataCircle[2]);
-					int dir = Integer.parseInt(dataCircle[3]);
+					int size = Integer.parseInt(dataRect[0]);
+					int posX = Integer.parseInt(dataRect[1]);
+					int posY = Integer.parseInt(dataRect[2]);
+					int dir = Integer.parseInt(dataRect[3]);
 					rect.add(new Rect(size, posX, posY, dir));
 				}
 				
-			}
+			}*/
 		//System.out.println(circle.size());
 		}
 		
