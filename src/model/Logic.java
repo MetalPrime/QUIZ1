@@ -29,10 +29,10 @@ public class Logic {
 					System.out.println(dataCircle[j]);
 					System.out.println(dataCircle[0]);
 					int size = Integer.parseInt(dataCircle[1]);
-					int posX = Integer.parseInt(dataCircle[2]);
+					int posX =(int) Integer.parseInt(dataCircle[2]);
 					int posY = Integer.parseInt(dataCircle[3]);
 					int dir = Integer.parseInt(dataCircle[4]);
-					circle.add(new Circle(size, posX, posY, dir));
+					circle.add(new Circle(app, size, posX, posY, dir));
 				}
 				
 			}

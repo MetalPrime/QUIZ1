@@ -1,5 +1,7 @@
 package model;
 
+import processing.core.PApplet;
+
 public class Rect extends Figure {
 
 	public Rect(PApplet app,int size, float posX, float posY, float dir) {
@@ -15,7 +17,7 @@ public class Rect extends Figure {
 	@Override
 	public void paint() {
 		// TODO Auto-generated method stub
-		
+		app.circle(getPosX(), getPosY(), size);
 	}
 
 	@Override

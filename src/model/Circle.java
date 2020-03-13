@@ -18,7 +18,7 @@ public class Circle extends Figure{
 	@Override
 	public void paint() {
 		// TODO Auto-generated method stub
-		
+		app.rect(getPosX(), getPosY(), getSize(), getSize());
 	}
 
 	@Override
