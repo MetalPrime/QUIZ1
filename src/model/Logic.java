@@ -36,19 +36,19 @@ public class Logic {
 				}
 				
 			}
-			/*if(txtload[i].contains("Cuadrado")) {
+			if(txtload[i].contains("Cuadrado")) {
 				
 				dataRect = txtload[i].split(" ");
 				for (int j = 0; j < dataRect.length; j++) {
 					System.out.println(dataRect[j]);
-					int size = Integer.parseInt(dataRect[0]);
-					int posX = Integer.parseInt(dataRect[1]);
-					int posY = Integer.parseInt(dataRect[2]);
-					int dir = Integer.parseInt(dataRect[3]);
-					rect.add(new Rect(size, posX, posY, dir));
+					int size = Integer.parseInt(dataRect[1]);
+					int posX = Integer.parseInt(dataRect[2]);
+					int posY = Integer.parseInt(dataRect[3]);
+					int dir = Integer.parseInt(dataRect[4]);
+					rect.add(new Rect(app, size, posX, posY, dir));
 				}
 				
-			}*/
+			}
 		//System.out.println(circle.size());
 		}
 		
